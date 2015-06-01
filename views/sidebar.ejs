@@ -1,0 +1,18 @@
+<div id="sidebar">
+	<div class="sidebar">
+		<form method="get" action="">
+			<input type="text" name="search"/>
+			<button>submit</button>
+		</form>
+	</div>
+	<div class="sidebar sidebar_space">
+		<label>文章分类</label>
+		<ul>
+		<% if(categories) { %>
+		<% categories.forEach(function(category){ %>
+			<li><a href="/article/category?id=<%= category.id %>"><%= category.name %>(<%= category.total %>)</a></li>
+		<% }) %>
+		<% } %>
+		</ul>
+	</div>
+</div>

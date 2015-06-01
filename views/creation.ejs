@@ -1,0 +1,18 @@
+<% include header.ejs %>
+<div class="container" style="background-color: linen;">
+	<div id="pagebody" class="body">
+        <div id="mainbody" class="mainbody">
+		<form action="/article/creation" method="get">
+			<label>文章标题</label>
+			<input type="text" name="title"/>
+			<label>正文内容</label>
+			<input type="text" name="content"/>
+			<input type="button" value="提交"/>
+		</form>
+		
+
+	       </div>
+	       <% include sidebar.ejs %>
+        </div>
+    </div>
+<% include footer.ejs %>

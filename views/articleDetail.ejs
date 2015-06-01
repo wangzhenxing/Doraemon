@@ -1,0 +1,17 @@
+<% include header.ejs %>
+<div class="container" style="background-color: linen;">
+	<div id="pagebody" class="body">
+       <div id="mainbody" class="mainbody">
+
+		<% if (article) { %>
+			<div class="post"><h3><%= article.title %></h3>
+				<br>
+				<%= article.content %>
+			</div>
+		<% }%>
+
+	       </div>
+	       <% include sidebar.ejs %>
+        </div>
+    </div>
+<% include footer.ejs %>

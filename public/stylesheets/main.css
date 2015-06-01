@@ -1,0 +1,31 @@
+.post {
+  background-color: #fff;
+  border-bottom: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 0 0 2em;
+  padding: 0.5em 5% 2em;
+  position: relative;
+  width: auto;
+}
+
+.body {
+  padding-top: 30px;
+}
+
+.sidebar input {
+	width: 23%;
+  	margin-left: 15px;
+}
+
+.sidebar label,a {
+	margin-left: 15px;
+}
+
+.sidebar_space {
+	padding-top: 15px;
+}
+
+.mainbody {
+	width:70%;
+	float:left;
+}

@@ -1,0 +1,24 @@
+<% include header.ejs %>
+<div class="container" style="background-color: linen;">
+	<div id="pagebody" class="body">
+        <div id="mainbody" class="mainbody">
+
+		<% if (articles) { %>
+		<%  articles.forEach(function(article){ %>
+			<div class="post"><h3><a href="/article/detail?id=<%= article.id %>" target="_blank"><%= article.title %></a></h3>
+			<span><%= article.author %></span><span style="padding-left:20px"> 创建于<%= article.time %></span>
+            <span style="padding-left:20px">浏览<%= article.hits %>)</span>
+            <br>
+				<%= article.content %>
+			</div>
+		<% }) %>
+		<% }%>
+
+	       </div>
+	       <% include sidebar.ejs %>
+        </div>
+    </div>
+    <input type="hidden" id="category_id" value="<%= categoryId %>"/>
+    
+<% include footer.ejs %>
+<script src="/javascripts/main/index.js"></script>
