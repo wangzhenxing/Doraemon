@@ -1,0 +1,122 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'ueditor', '--save' ]
+2 info using npm@2.10.1
+3 info using node@v0.12.4
+4 verbose install initial load of /Users/apple/study/express4/Doraemon/package.json
+5 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/async/package.json
+6 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/body-parser/package.json
+7 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/bootstrap/package.json
+8 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/co/package.json
+9 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/cookie-parser/package.json
+10 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/debug/package.json
+11 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/ejs/package.json
+12 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/express/package.json
+13 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/fs/package.json
+14 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/jugglingdb/package.json
+15 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/jugglingdb-mysql/package.json
+16 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/jugglingdb-redis/package.json
+17 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/moment/package.json
+18 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/morgan/package.json
+19 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/node-arp/package.json
+20 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/q/package.json
+21 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/serve-favicon/package.json
+22 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/supervisor/package.json
+23 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/thunkify/package.json
+24 verbose installManyTop reading scoped package data from /Users/apple/study/express4/Doraemon/node_modules/yield/package.json
+25 info package.json jugglingdb@0.3.0 No license field.
+26 info package.json jugglingdb-redis@0.0.2-2 No repository field.
+27 info package.json fs@0.0.2 fs is also the name of a node core module.
+28 info package.json fs@0.0.2 No description
+29 info package.json fs@0.0.2 No repository field.
+30 info package.json fs@0.0.2 No README data
+31 info package.json supervisor@0.6.0 No license field.
+32 info package.json moment@2.10.3 No license field.
+33 info package.json bootstrap@3.3.4 license should be a valid SPDX license expression
+34 info package.json q@1.4.1 license should be a valid SPDX license expression
+35 verbose readDependencies loading dependencies from /Users/apple/study/express4/Doraemon/package.json
+36 silly cache add args [ 'ueditor', null ]
+37 verbose cache add spec ueditor
+38 silly cache add parsed spec { raw: 'ueditor',
+38 silly cache add   scope: null,
+38 silly cache add   name: 'ueditor',
+38 silly cache add   rawSpec: '',
+38 silly cache add   spec: '*',
+38 silly cache add   type: 'range' }
+39 silly addNamed ueditor@*
+40 verbose addNamed "*" is a valid semver range for ueditor
+41 silly addNameRange { name: 'ueditor', range: '*', hasData: false }
+42 silly mapToRegistry name ueditor
+43 silly mapToRegistry using default registry
+44 silly mapToRegistry registry https://registry.npmjs.org/
+45 silly mapToRegistry uri https://registry.npmjs.org/ueditor
+46 verbose addNameRange registry:https://registry.npmjs.org/ueditor not in flight; fetching
+47 verbose request uri https://registry.npmjs.org/ueditor
+48 verbose request no auth needed
+49 info attempt registry request try #1 at 22:42:22
+50 verbose request id b010fcfc3c9f05ee
+51 verbose etag "5O4PHIVALKJO10T4I40C4WHZ4"
+52 http request GET https://registry.npmjs.org/ueditor
+53 http 304 https://registry.npmjs.org/ueditor
+54 silly get cb [ 304,
+54 silly get   { date: 'Tue, 02 Jun 2015 14:42:24 GMT',
+54 silly get     via: '1.1 varnish',
+54 silly get     'cache-control': 'max-age=60',
+54 silly get     etag: '"5O4PHIVALKJO10T4I40C4WHZ4"',
+54 silly get     age: '0',
+54 silly get     connection: 'keep-alive',
+54 silly get     'x-served-by': 'cache-fra1229-FRA',
+54 silly get     'x-cache': 'MISS',
+54 silly get     'x-cache-hits': '0',
+54 silly get     'x-timer': 'S1433256144.321727,VS0,VE723',
+54 silly get     vary: 'Accept' } ]
+55 verbose etag https://registry.npmjs.org/ueditor from cache
+56 verbose get saving ueditor to /Users/apple/.npm/registry.npmjs.org/ueditor/.cache.json
+57 silly addNameRange number 2 { name: 'ueditor', range: '*', hasData: true }
+58 silly addNameRange versions [ 'ueditor',
+58 silly addNameRange   [ '0.0.1',
+58 silly addNameRange     '0.0.2',
+58 silly addNameRange     '0.0.3',
+58 silly addNameRange     '0.0.4',
+58 silly addNameRange     '0.0.5',
+58 silly addNameRange     '0.0.6',
+58 silly addNameRange     '0.0.7',
+58 silly addNameRange     '1.0.0',
+58 silly addNameRange     '1.1.0',
+58 silly addNameRange     '1.1.1' ] ]
+59 silly addNamed ueditor@1.1.1
+60 verbose addNamed "1.1.1" is a plain semver version for ueditor
+61 silly mapToRegistry name ueditor
+62 silly mapToRegistry using default registry
+63 silly mapToRegistry registry https://registry.npmjs.org/
+64 silly mapToRegistry uri https://registry.npmjs.org/ueditor
+65 verbose addRemoteTarball https://registry.npmjs.org/ueditor/-/ueditor-1.1.1.tgz not in flight; adding
+66 verbose addRemoteTarball [ 'https://registry.npmjs.org/ueditor/-/ueditor-1.1.1.tgz',
+66 verbose addRemoteTarball   '1c7ac4a41310569dde83d47b952555d799af44b5' ]
+67 info retry fetch attempt 1 at 22:42:25
+68 info attempt registry request try #1 at 22:42:25
+69 http fetch GET https://registry.npmjs.org/ueditor/-/ueditor-1.1.1.tgz
+70 http fetch 200 https://registry.npmjs.org/ueditor/-/ueditor-1.1.1.tgz
+71 info retry will retry, error on last attempt: Error: read ECONNRESET
+72 info retry will retry, error on last attempt: Error: read ECONNRESET
+73 silly fetchAndShaCheck shasum 1c7ac4a41310569dde83d47b952555d799af44b5
+74 verbose stack Error: shasum check failed for /var/folders/z6/f504tgds1vl0mmhhm1b4hhmh0000gn/T/npm-95912-4c9c0a0a/registry.npmjs.org/ueditor/-/ueditor-1.1.1.tgz
+74 verbose stack Expected: 1c7ac4a41310569dde83d47b952555d799af44b5
+74 verbose stack Actual:   028ed9f4611bda685080998700b9567cdd8a9c99
+74 verbose stack From:     https://registry.npmjs.org/ueditor/-/ueditor-1.1.1.tgz
+74 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/sha/index.js:38:8
+74 verbose stack     at ReadStream.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/sha/index.js:85:7)
+74 verbose stack     at ReadStream.emit (events.js:129:20)
+74 verbose stack     at _stream_readable.js:908:16
+74 verbose stack     at process._tickCallback (node.js:355:11)
+75 verbose cwd /Users/apple/study/express4/Doraemon
+76 error Darwin 13.4.0
+77 error argv "node" "/usr/local/bin/npm" "install" "ueditor" "--save"
+78 error node v0.12.4
+79 error npm  v2.10.1
+80 error shasum check failed for /var/folders/z6/f504tgds1vl0mmhhm1b4hhmh0000gn/T/npm-95912-4c9c0a0a/registry.npmjs.org/ueditor/-/ueditor-1.1.1.tgz
+80 error Expected: 1c7ac4a41310569dde83d47b952555d799af44b5
+80 error Actual:   028ed9f4611bda685080998700b9567cdd8a9c99
+80 error From:     https://registry.npmjs.org/ueditor/-/ueditor-1.1.1.tgz
+81 error If you need help, you may report this error at:
+81 error     <https://github.com/npm/npm/issues>
+82 verbose exit [ 1, true ]

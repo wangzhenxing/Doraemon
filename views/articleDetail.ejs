@@ -5,7 +5,9 @@
 
 		<% if (article) { %>
 			<div class="post"><h3><%= article.title %></h3>
-				<br>
+			<span><%= article.author %></span><span style="padding-left:20px"> 创建于<%= article.time %></span>
+            <span style="padding-left:20px">浏览<%= article.hits %>)</span>
+            <br>
 				<%= article.content %>
 			</div>
 		<% }%>

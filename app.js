@@ -7,6 +7,8 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var article = require('./routes/article');
+// 支持ueditor请求
+var ueditor = require('./routes/ueditor');
 //var users = require('./routes/users');
 
 var app = express();

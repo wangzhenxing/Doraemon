@@ -40,6 +40,7 @@ exports.getPort = function() {
 exports.getBlogConf = function(){
     return {
         'pageSize' : 5,
-        'title' : "lyy-wzx blog"
+        'title' : "lyy-wzx blog",
+        'context' : "http://127.0.0.1:3000"
     } ;
 }

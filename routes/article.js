@@ -5,8 +5,10 @@ var articleManager = require('../managers/articles/ArticleManager.js');
 var categories = require('../models/mysql/Categories.js');
 var blogConf = require('../conf/config.js');
 var async = require('async');
+var moment = require('moment');
 
 var blogTitle = blogConf.getBlogConf().title;
+var context = blogConf.getBlogConf().context;
 
 /* get article detail */
 router.get('/detail', function(req, res, next) {
@@ -14,6 +16,7 @@ router.get('/detail', function(req, res, next) {
 	articles.qQueryOne({
 		'id' : id
 	}).then(function(article) {
+		article.time = moment(article.created).format('YYYY-MM-DD HH:mm');
 		return article;
 	}).then(function(article) {
 		categories.qQuery().then(function(categories) {
@@ -59,19 +62,41 @@ router.get('/category', function(req, res, next) {
 	});
 });
 
-/*add new article*/
-router.get('/creation', function(req, res) {
+/*add new article initPage*/
+router.get('/creation', function (req, res){
 	async.parallel([ function (callback) {
-	  categories.qQuery().then(function(categories) {
-	    callback(null, categories);
+		  categories.qQuery().then(function(categories) {
+		    callback(null, categories);
+			});
+		}], function (err, results) {
+			res.render('creation', {
+				blogTitle : blogTitle,
+				categories : results[0],
+			});
 		});
-	}], function (err, results) {
-		res.render('creation', {
-			blogTitle : blogTitle,
-			categories : results[0],
-		});
+});
+
+/*add new article*/
+router.post('/savion', function(req, res) {
+	var article = {};
+	article.title = req.body.title;
+	article.content = req.body.editorValue;
+	article.author = 'xxx';
+	article.category = 1;
+	article.hits = 0;
+	article.status = 1;
+	article.created = moment().format("YYYY-MM-DD HH:mm:ss");
+	article.updated = moment().format("YYYY-MM-DD HH:mm:ss");
+	article.created_date = moment().format("YYYY-MM-DD");
+	articles.create(article, function(err, data){
+		if(!err){
+			res.redirect(context + "/main/index");
+		}else{
+			res.send(-1);
+		}
 	});
 
 });
+
 
 module.exports = router;
